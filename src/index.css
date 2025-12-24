@@ -1,22 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*,
-#root,
-body {
+* {
   margin: 0px;
   padding: 0px;
-}
-
-.title {
-  color: #fff;
-  font-size: 4rem;
-  font-weight: 500;
-  z-index: 10;
-  letter-spacing: 50px;
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  transform: translateX(25px);
-  margin-top: 20px
 }
 
 .main {
@@ -31,11 +17,11 @@ body {
 }
 
 .bg-box-primary {
-  width: 400px;
-  height: 200px;
+  width: 40vmin;
+  height: 20vmin;
   background-color: #fff;
   position: relative;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .bg-box-primary::before {
@@ -43,8 +29,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 400px;
-  height: 400px;
+  width: 40vmin;
+  height: 40vmin;
   border-radius: 50%;
   background-color: #000;
   transform: translateX(-50%);
@@ -55,23 +41,23 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 400px;
-  height: 400px;
+  width: 40vmin;
+  height: 40vmin;
   border-radius: 50%;
   background-color: #000;
   transform: translateX(50%);
 }
 
 .bg-box-secondary {
-  width: 100px;
-  height: 100px;
+  width: 20vmin;
+  height: 20vmin;
   background-color: #fff;
   position: relative;
 }
 
 .bg-box-secondary-inner-tl {
-  width: 100px;
-  height: 100px;
+  width: 20vmin;
+  height: 20vmin;
   border-radius: 50%;
   background-color: #000;
   position: absolute;
@@ -81,8 +67,8 @@ body {
 }
 
 .bg-box-secondary-inner-tr {
-  width: 100px;
-  height: 100px;
+  width: 20vmin;
+  height: 20vmin;
   border-radius: 50%;
   background-color: #000;
   position: absolute;
@@ -92,8 +78,8 @@ body {
 }
 
 .bg-box-secondary-inner-bl {
-  width: 100px;
-  height: 100px;
+  width: 20vmin;
+  height: 20vmin;
   border-radius: 50%;
   background-color: #000;
   position: absolute;
@@ -103,12 +89,24 @@ body {
 }
 
 .bg-box-secondary-inner-br {
-  width: 100px;
-  height: 100px;
+  width: 20vmin;
+  height: 20vmin;
   border-radius: 50%;
   background-color: #000;
   position: absolute;
   bottom: 0;
   right: 0;
   transform: translate(50%, 50%);
+}
+
+.title {
+  color: #fff;
+  font-size: 6vw;
+  font-weight: 500;
+  z-index: 10;
+  letter-spacing: 4vw;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  transform: translateX(2vw);
+  margin-top: 40px;
 }
