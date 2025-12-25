@@ -20,19 +20,19 @@ function App() {
 
   return (
     <>
-      {/* The 'key' prop here is crucial for the replay functionality */}
-      <div className="main" key={key}>
-        {/* Replay button: Fades in after the main animation sequence completes (4s delay) */}
-        <motion.button
-          className="replay-btn"
-          onClick={handleReplay}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1, repeat: 0, delay: 4, ease: "easeInOut" }}
-        >
-          Replay
-        </motion.button>
+      {/* Replay button: Fades in after the main animation sequence completes (4s delay) */}
+      <motion.button
+        className="replay-btn"
+        onClick={handleReplay}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, repeat: 0, delay: 4, ease: "easeInOut" }}
+      >
+        Replay
+      </motion.button>
 
+      {/* The 'key' prop here is for the replay functionality */}
+      <div className="main" key={key}>
         {/* 
           Main animated wrapper: 
           Contains the logo elements and handles the final fade-out of the entire scene.
